@@ -1,0 +1,130 @@
+* {
+    background-color: #FEFF86;
+    margin: 17px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    height: 7px;
+}
+
+a > img {
+    height: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: .5fr .8fr 1fr .5fr 0.2fr / 1fr 2fr 2fr;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.profile-left {
+    grid-row: span 5;
+}
+
+.hobbies {
+    grid-column: span 2;
+}
+
+.footer {
+    grid-column: span 2;
+}
+
+.profile-img {
+    height: 17rem;
+    border-radius: 50%;
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 17px;
+    align-self: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-presentation {
+    grid-column: span 2;
+    font-family: 'Gloock', serif;
+    font-size: 1.7rem;
+}
+
+.grid-table-1 {
+    display: grid;
+    grid-template: repeat(9, 1fr) / 3fr .5fr;
+    margin: 0;
+}
+
+.grid-table-2 {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 3fr .5fr;
+    margin: 0;
+}
+
+.grid-table-1 > p {
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+
+.grid-table-2 > p {
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template: repeat(8, auto) / auto;
+    }
+    .profile-left {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .flex-container {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .name-presentation {
+        grid-column: span 1;
+    }    
+    .hobbies {
+        grid-column: span 1;
+    }
+    .footer {
+        grid-column: span 1;
+    }
+    .sticky-container {
+        position: inherit;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .grid-container {
+        grid-template: .75fr .5fr 1fr 1fr .5fr .25fr / 1fr 1fr;
+    }
+    .profile-left {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+    .flex-container {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sticky-container {
+        position: inherit;
+    }
+}

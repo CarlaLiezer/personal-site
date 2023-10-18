@@ -3,10 +3,16 @@
 }
 
 body {
-    /* background-color: #D8D9DA; */
-    background-color: #B3B3B3;
+    background-color: #D7E5CA;
     color: #202020;
     margin: 0;
+}
+
+h1 {
+    font-family: operetta-52, serif;
+    font-weight: 900;
+    font-feature-settings: "swsh";
+    font-size: clamp(1.75rem, 1.75rem + 1.75vw, 3.5rem);
 }
 
 hr {
@@ -22,7 +28,7 @@ h3 + p {
 
 a {
     text-decoration: none;
-    color: #B91646;
+    color: #BF0000;
 }
 
 a:visited {
@@ -51,7 +57,7 @@ a:visited {
     font-family: 'halcom', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+    font-size: clamp(0.75rem, 0.75rem + 0.2vw, 1rem);
 }
 
 .profile-left {
@@ -68,10 +74,6 @@ a:visited {
 
 .name-presentation {
     grid-column: span 2;
-    font-family: "lust-stencil-display", serif;
-    font-feature-settings: "salt";
-    font-style: normal;
-    font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem)
 }
 
 .sticky-container {
